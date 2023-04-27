@@ -8,7 +8,7 @@
         - name: Run JMeter Tests
           uses: QAInsights/PerfAction@v3.1
           with:
-            test-plan-path: DemoBlaze-1.0.0.jmx
+            test-plan-path: './DemoBlaze-1.0.0.jmx'
             args: ''
             
         - name: Upload Results
