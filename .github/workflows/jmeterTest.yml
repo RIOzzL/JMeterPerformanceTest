@@ -1,4 +1,10 @@
-  on: [push]
+  name: JMeter Test
+  run-name: ${{ github.actor }} is learning GitHub Actions
+  on:
+    push:
+    schedule:
+    # * is a special character in YAML so you have to quote this string
+      - cron:  '4,15 13 * * *'
   jobs:
     jmeter_job:
       runs-on: ubuntu-latest
